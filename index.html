@@ -14,10 +14,9 @@
     <ul>
         <li><a href="#midias">Trabalhando com  mídias   em Html</a></li>
         <li><a href="#tabelas">Criando tabelas  em  Html</a></li>
-        <li><a href="#">Trabalhando com formulários em Html</a></li>
-        <li><a href="#">Html  semântico  e  acessibilidade</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#forms">Trabalhando com formulários em Html</a></li>
+        <li><a href="#semantico">Html  semântico  e  acessibilidade</a></li>       
+        <li><a href="#referencias">Links de referências</a></li>
     </ul>
 
     <h2 id="midias">Utilizando tags  de  mídias em Html</h2>
@@ -68,29 +67,68 @@
       <a href="#index">voltar</a>
     </p>
    
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="forms">Trabalhando  com  formulários  em Html</h2>
+    <h3>O que  são  formulários no Html ?</h3>
+     <p>
+        <strong><u><i>formulários</i></u></strong>
+        é  uma  estrutura  que  o html fornece  que  permite  que  o usuário  envie  dados do  cliente  para o servidor,
+        utiliza  os inputs  para  que  o usuário  forneça  dados.
+        <h4>Principais  exemplos  de tags  do formulário</h4>
+      <ul>
+        <li><mark>form</mark> cria  o  formulário,  possui  os  atributos  <strong>action</strong>
+           cujo valor  fornecido, indica para onde  os  dados do formulário  estão sendo  enviados .
+           <strong>method</strong> que  indica  a  forma que  estão  sendo  enviados  os  dados,  por exemplo:
+           <strong><u>GET</u></strong>  informa que  está  enviando  pela  url   e  o <strong><u>POST</u></strong>
+           que  envia no  body  de  uma  requisição.
+        </li>      
+      </ul>
+      <h5>Principais  inputs   do  formulário</h5>
+      <ul>
+        <li>
+            <small>input type='text'</small>
+            Permite  que  o usuário  digite  valores  de  string no campo.
+        </li>
+        <li><small>input type="number"</small> Permite  somente  valores  number podendo ter  um  valor minimo com o atributo 
+            <strong>min</strong>   e um  valor  máximo  com  <strong>max</strong>
+        </li>
+        <li><small>input type="date"</small> Permite  escolher  um  valor  de data </li>
+        <li><small>input type="file"</small> Permite  escolher  um  arquivo </li>
+        <li><small>input type="email"</small>O valor  digitado  tem que  obedecer  o padrão  de  email </li>
+      </ul>
+      <a href="#index">voltar</a>
+    </p>
+    <h2 id="semantico">HTML Semântico  e  acessibilidade</h2>
+     <h3>O que é o Html  semântico?</h3>
+    <p>
+         <strong><u><i>semântica no html</i></u></strong>
+         São  as  melhores  práticas  em Html,  em relação a  estrutura  e  nomenclatura de  forma que tenha significado bem definido,
+         facilitando  com  seu  site  tenha  boa  classificação  de SEO.
+        <h4>Principais  exemplos  de tags  semânticas</h4>
+      <ul>
+        <li><mark>main</mark> indica  que  é  a tag principal  de uma  página e que  só  pode ter uma dela  por  página
+        e  que  não  pode  está sendo envolta  por  outras  tags como  <i>section </i> e  <i>article</i>.
+        </li>      
+        <li>
+            <mark>section</mark>  essa  tag  cria  sessões  na  página  ,  permitindo  uma  divisão  mais  estruturada.
+        </li>
+        <li>
+            <mark>nav</mark>  cria  uma área  de  navegação.
+        </li>
+        <li>
+            <mark>header</mark>  indica  que  é  o cabeçalho .
+        </li>
+        <li><mark>footer</mark> indica  que  é  o rodapé </li>
+      </ul>
+     
+      <a href="#index">voltar</a>
+    </p>    
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <h2 id="referencias">Links de referências</h2>
+    <p>Sites  para  referências</p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Mozilla  docs</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank" >w3schools</a></li>
     </ul>
+      <a href="#index">voltar</a>
 </body>
 </html>
